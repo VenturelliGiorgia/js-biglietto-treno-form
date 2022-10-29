@@ -1,0 +1,23 @@
+.my-bg-body {
+    background-color: rgb(204 0 72);
+}
+
+.color-primary {
+    color: rgb(204 0 72);
+}
+
+.my-border-primary {
+    border: 1px solid rgb(204 0 72);
+    border-radius: 5px;
+    padding: 0.25rem 4rem;
+}
+
+.my-card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn-grey {
+    background-color: darkgrey;
+    border: none;
+}
