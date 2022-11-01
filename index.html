@@ -10,7 +10,7 @@
 </head>
 <body class="my-bg-body">
     <div class="container">
-        <div class="title text-white text-center p-5">
+        <div class="title text-white text-center p-3">
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </div>
         <div class="my-card pt-4 pb-4">
@@ -36,7 +36,7 @@
                     <select name="" id="mySelect">
                         <option value=" "></option>
                         <option value="20">Minorenni</option>
-                        <option value="40">Over 60</option>
+                        <option value="40">Over 65</option>
                     </select>
                 </div>
             </div>
@@ -48,6 +48,47 @@
             <p id="paragrafo">
 
             </p>
+        </div>
+        <div class="title text-white text-center p-3">
+            <h1>IL TUO BIGLIETTO</h1>
+        </div>
+        <div class="my-card p-4"> 
+            
+            <div class="row">
+                <div>
+                    <h3>DETTAGLIO PASSEGGERI</h3>
+                </div>
+                <div class="col-4 pt-2 ms-2  bg-secondary">
+                    <div class="text-black">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h4 id="h4"></h4>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="info-biglietto">
+                        <span class="pt-2 pb-5 fw-bold fs-6">Offerta</span>                        
+                            <p id="tipoBiglietto" class="my-pt-4"> </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="info-biglietto">
+                        <span class="pt-2 pb-5 fw-bold fs-6">Carrozza</span>
+                        <p class="my-pt-4" id="carrozza"> </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="info-biglietto">
+                        <span class="pt-2 fw-bold fs-6">Codice CP</span>
+                        <p class="my-pt-4" id="codice"> </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="info-biglietto">
+                        <span class="pt-2 pb-5 fw-bold fs-6">Costo biglietto</span>
+                        <p id="costoBiglietto" class="my-pt-2"> </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/main.js"></script>

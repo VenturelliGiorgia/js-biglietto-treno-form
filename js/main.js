@@ -12,8 +12,7 @@ const inputKmEl = document.querySelector("[name='km']");
 console.log(inputEl);
 inputKmEl.value = km;
 console.log(inputKmEl.value);
-
-
+h4.innerHTML = `<strong>${fullName}</strong>`
 const btnGenera = document.getElementById("btn-genera");
 console.log(costoKmTotal);
 let value;
@@ -28,17 +27,25 @@ btnGenera.addEventListener("click", function myFunction() {
     if (valoreOpzione == 20) {
         const costoTotal = costoKmTotal * .80;
         let num = costoTotal.toFixed(2);
-        paragrafo.innerHTML = `Costo biglietto, con l'aggiunta del 20% di sconto: <strong> ${num}Є</strong>`;
+        carrozza.innerHTML = `5`
+        codice.innerHTML = `92911`
+        tipoBiglietto.innerHTML = `Biglietto Minorenni`
+        costoBiglietto.innerHTML = `${num}Є`;
     } else if (valoreOpzione == 40) {
         const costoTotal = costoKmTotal * .60;
         let num = costoTotal.toFixed(2);
-        paragrafo.innerHTML = `Costo biglietto, con l'aggiunta del 40% di sconto: <strong>${num}Є</strong>`
+        carrozza.innerHTML = `2`
+        codice.innerHTML = `96981`
+        tipoBiglietto.innerHTML = `Biglietto Over65`
+
+        costoBiglietto.innerHTML = `${num}Є`
     } else {
         let num = costoKmTotal.toFixed(2);
-        paragrafo.innerHTML = `Costo biglietto: <strong>${num}Є</strong>`
+        carrozza.innerHTML = `8`
+        codice.innerHTML = `92532`
+        tipoBiglietto.innerHTML = `Biglietto Standard`
+        costoBiglietto.innerHTML = `${num}Є`
     }
 
     console.log(mySelect.value);
 });
-
-
